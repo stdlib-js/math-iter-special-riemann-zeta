@@ -1,0 +1,39 @@
+{
+  "name": "@stdlib/math-iter-special-riemann-zeta",
+  "version": "0.0.0",
+  "description": "Create an iterator which evaluates the Riemann zeta function for each iterated value.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-iter-special-riemann-zeta.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "number",
+    "zeta",
+    "riemann",
+    "euler",
+    "number theory",
+    "physics",
+    "special function",
+    "special",
+    "function",
+    "complex analysis",
+    "iterator",
+    "iterable",
+    "iterate"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
