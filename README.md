@@ -33,7 +33,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Create an [iterator][mdn-iterator-protocol] which evaluates the [Riemann zeta][@stdlib/math/base/special/zeta] function for each iterated value.
+> Create an [iterator][mdn-iterator-protocol] which evaluates the [Riemann zeta][@stdlib/math/base/special/riemann-zeta] function for each iterated value.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -45,22 +45,38 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-special-riemann-zeta
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterZeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-riemann-zeta@deno/mod.js';
+var iterZeta = require( '@stdlib/math-iter-special-riemann-zeta' );
 ```
 
 #### iterZeta( iterator )
 
-Returns an [iterator][mdn-iterator-protocol] which iteratively evaluates the [Riemann zeta][@stdlib/math/base/special/zeta] function.
+Returns an [iterator][mdn-iterator-protocol] which iteratively evaluates the [Riemann zeta][@stdlib/math/base/special/riemann-zeta] function.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var it = iterZeta( array2iterator( [ 1.1, -4.0 ] ) );
 // returns <Object>
@@ -105,8 +121,8 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import iterZeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-riemann-zeta@deno/mod.js';
+var uniform = require( '@stdlib/random-iter-uniform' );
+var iterZeta = require( '@stdlib/math-iter-special-riemann-zeta' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 1.1, 50.0, {
@@ -163,7 +179,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -225,9 +241,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
-<!-- <related-links> -->
+[@stdlib/math/base/special/riemann-zeta]: https://github.com/stdlib-js/math-base-special-riemann-zeta
 
-[@stdlib/math/base/special/riemann-zeta]: https://github.com/stdlib-js/math-base-special-riemann-zeta/tree/deno
+<!-- <related-links> -->
 
 <!-- </related-links> -->
 
