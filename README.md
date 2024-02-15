@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterZeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-riemann-zeta@deno/mod.js';
+import iterZeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-riemann-zeta@v0.2.0-deno/mod.js';
 ```
 
 #### iterZeta( iterator )
@@ -106,7 +106,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 ```javascript
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import iterZeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-riemann-zeta@deno/mod.js';
+import iterZeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-riemann-zeta@v0.2.0-deno/mod.js';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 1.1, 50.0, {
