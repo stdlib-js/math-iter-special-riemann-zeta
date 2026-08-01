@@ -45,32 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-iter-special-riemann-zeta
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var iterZeta = require( '@stdlib/math-iter-special-riemann-zeta' );
+import iterZeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-riemann-zeta@esm/index.mjs';
 ```
 
 #### iterZeta( iterator )
@@ -78,7 +60,7 @@ var iterZeta = require( '@stdlib/math-iter-special-riemann-zeta' );
 Returns an [iterator][mdn-iterator-protocol] which iteratively evaluates the [Riemann zeta][@stdlib/math/base/special/riemann-zeta] function.
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var it = iterZeta( array2iterator( [ 1.1, -4.0 ] ) );
 // returns <Object>
@@ -122,9 +104,14 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var uniform = require( '@stdlib/random-iter-uniform' );
-var iterZeta = require( '@stdlib/math-iter-special-riemann-zeta' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
+import iterZeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-riemann-zeta@esm/index.mjs';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 1.1, 50.0, {
@@ -144,6 +131,10 @@ while ( true ) {
     }
     console.log( v.value );
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -181,7 +172,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -246,7 +237,7 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
-[@stdlib/math/base/special/riemann-zeta]: https://github.com/stdlib-js/math-base-special-riemann-zeta
+[@stdlib/math/base/special/riemann-zeta]: https://github.com/stdlib-js/math-base-special-riemann-zeta/tree/esm
 
 <!-- <related-links> -->
 
